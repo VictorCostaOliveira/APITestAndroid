@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements RecylerViewaAdapt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         adapter = new RecylerViewaAdapter(RecylerViewaAdapter.planetList, this);
         recyclerViewPlanetName = (RecyclerView) findViewById(R.id.recyclerViewPlanet);
 
