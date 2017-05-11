@@ -5,4 +5,6 @@ package com.example.jera.apitest.model;
  */
 
 public class PeopleClass {
+
+
 }
