@@ -1,6 +1,7 @@
 package com.example.jera.apitest.rest;
 
 import com.example.jera.apitest.model.PlanetAPI;
+import com.example.jera.apitest.model.Results;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -15,7 +16,6 @@ public interface ClienteInfarfaceAPI {
 
 
     @GET("api/planets/")
-    Call<PlanetAPI> getPlanet(@Path("planets") String planets);
-
+    Call<Results> getPlanet();
 
 }

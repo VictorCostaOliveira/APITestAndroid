@@ -12,7 +12,7 @@ public class APIClient {
     private static final String BASE_URL = "http://swapi.co/api/";
     private static Retrofit retrofit;
 
-    public static ClienteInfarfaceAPI getPlanet() {
+    public static ClienteInfarfaceAPI getPlanetAPI() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
