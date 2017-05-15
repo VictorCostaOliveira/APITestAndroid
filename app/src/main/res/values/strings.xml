@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">APITest</string>
+    <string name="pessoas">Pessoas</string>
+    <string name="filmes">Filmes</string>
+    <string name="planetas">Planetas</string>
+    <string name="espacionaves">Espacionaves</string>
+    <string name="especies">Especies</string>
+    <string name="veiculos">Veiculos</string>
 </resources>
