@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements RecylerViewaAdapt
                 } else {
                     Results results = response.body();
                     for (PlanetAPI planets : results.getPlanets()) {
-                        
+
                     }
                 }
             }
