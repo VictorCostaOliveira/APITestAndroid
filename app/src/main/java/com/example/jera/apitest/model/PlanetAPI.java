@@ -12,6 +12,7 @@ import java.io.Serializable;
 
 public class PlanetAPI {
 
+
     @SerializedName("id")
     private int id;
     @SerializedName("name")
