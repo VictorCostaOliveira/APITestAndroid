@@ -13,9 +13,6 @@ public class Results {
     @SerializedName("results")
     ArrayList<PlanetAPI> planets;
 
-    public Results(ArrayList<PlanetAPI> planets) {
-        this.planets = planets;
-    }
 
     public ArrayList<PlanetAPI> getPlanets() {
         return planets;

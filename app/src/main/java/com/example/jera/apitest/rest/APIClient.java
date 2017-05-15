@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIClient {
 
-    private static final String BASE_URL = "http://swapi.co/api/";
+    private static final String BASE_URL = "http://swapi.co/";
     private static Retrofit retrofit;
 
     public static ClienteInfarfaceAPI getPlanetAPI() {
