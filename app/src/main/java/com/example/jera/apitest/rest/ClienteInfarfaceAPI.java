@@ -14,8 +14,8 @@ import retrofit2.http.Query;
 public interface ClienteInfarfaceAPI {
 
 
-    @GET("api/planets/")
-    Call<PlanetAPI> getPlanet(@Path("planets") String planets);
+    @GET("planets/")
+    Call<PlanetAPI> getPlanet();
 
 
 }
