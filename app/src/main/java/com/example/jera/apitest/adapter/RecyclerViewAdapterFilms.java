@@ -33,11 +33,11 @@ public class RecyclerViewAdapterFilms extends RecyclerView.Adapter<AdapterViewHo
 
     @Override
     public void onBindViewHolder(AdapterViewHolder holder, int position) {
-        holder.viewNameFilm.setText("Nome do filme" + filmAPI.get(position).getFilmName());
-        holder.viewEpisodeFilm.setText(filmAPI.get(position).getFilmEpisode());
-        holder.viewOpeningFilm.setText(filmAPI.get(position).getFilmOpening());
-        holder.viewDirectorFilm.setText(filmAPI.get(position).getFilmDirector());
-        holder.viewDateFilm.setText(filmAPI.get(position).getFilmDate());
+        holder.viewNameFilm.setText("Nome do filme: " + filmAPI.get(position).getFilmName());
+        holder.viewEpisodeFilm.setText("Episodeo: " + filmAPI.get(position).getFilmEpisode());
+        holder.viewOpeningFilm.setText("Abertura: " + filmAPI.get(position).getFilmOpening() + " ...");
+        holder.viewDirectorFilm.setText("Diretor: " + filmAPI.get(position).getFilmDirector());
+        holder.viewDateFilm.setText("Data de estreia: " + filmAPI.get(position).getFilmDate());
 
     }
 

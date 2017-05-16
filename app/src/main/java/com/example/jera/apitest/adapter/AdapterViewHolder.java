@@ -12,11 +12,14 @@ import com.example.jera.apitest.R;
 
 public final class AdapterViewHolder extends RecyclerView.ViewHolder {
 
+    // Planets View
     TextView viewNamePlanet;
     TextView viewGravity;
     TextView viewPopulation;
     TextView viewClimate;
     TextView viewTerrain;
+
+    // Films View
     TextView viewNameFilm;
     TextView viewEpisodeFilm;
     TextView viewOpeningFilm;

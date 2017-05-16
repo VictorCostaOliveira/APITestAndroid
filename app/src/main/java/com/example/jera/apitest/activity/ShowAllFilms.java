@@ -51,8 +51,6 @@ public class ShowAllFilms extends AppCompatActivity {
                 Toast.makeText(ShowAllFilms.this, R.string.conectioError, Toast.LENGTH_SHORT).show();
             }
         });
-
-
     }
 
     @Override

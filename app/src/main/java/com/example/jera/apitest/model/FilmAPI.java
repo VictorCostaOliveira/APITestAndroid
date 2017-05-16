@@ -10,7 +10,7 @@ import java.io.Serializable;
 
 public class FilmAPI {
 
-    @SerializedName("name")
+    @SerializedName("title")
     private String filmName;
 
     @SerializedName("episode_id")
