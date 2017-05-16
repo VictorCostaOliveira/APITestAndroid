@@ -9,6 +9,7 @@ import com.example.jera.apitest.R;
 import com.example.jera.apitest.adapter.RecylerViewAdapter;
 
 public class MainActivity extends AppCompatActivity implements RecylerViewAdapter.AdapterInterface {
+    private RecylerViewAdapter adapter;
     private RecyclerView recyclerView;
     private static final String TAG = "Victor";
 
@@ -17,13 +18,12 @@ public class MainActivity extends AppCompatActivity implements RecylerViewAdapte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = (RecyclerView) findViewById(R.id.optionRecyclerView);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewOptions);
 
-
+    }
 
     @Override
     public void onClickSelected(int id) {
         startActivity(new Intent(MainActivity.this, ShowAllPlanets.class));
     }
 }
-
