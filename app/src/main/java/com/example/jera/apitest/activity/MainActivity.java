@@ -3,14 +3,15 @@ package com.example.jera.apitest.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.example.jera.apitest.R;
 import com.example.jera.apitest.adapter.RecylerViewAdapter;
 
-public class MainActivity extends AppCompatActivity implements RecylerViewAdapter.AdapterInterface {
-    private RecylerViewAdapter adapter;
-    private RecyclerView recyclerView;
+public class MainActivity extends AppCompatActivity {
+    private CardView cardViewPlanet;
     private static final String TAG = "Victor";
 
     @Override
@@ -18,12 +19,16 @@ public class MainActivity extends AppCompatActivity implements RecylerViewAdapte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewOptions);
+
+        cardViewPlanet = (CardView) findViewById(R.id.cardViewPlanets);
+
+        cardViewPlanet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ShowAllPlanets.class));
+            }
+        });
 
     }
 
-    @Override
-    public void onClickSelected(int id) {
-        startActivity(new Intent(MainActivity.this, ShowAllPlanets.class));
-    }
 }

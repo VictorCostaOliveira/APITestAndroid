@@ -13,8 +13,7 @@ public class APIResults {
     @SerializedName("results")
     ArrayList<PlanetAPI> planets;
 
-    @SerializedName("results")
-    ArrayList<PeopleAPI> peoples;
+
 
     public ArrayList<PlanetAPI> getPlanets() {
         return planets;
@@ -24,11 +23,5 @@ public class APIResults {
         this.planets = planets;
     }
 
-    public ArrayList<PeopleAPI> getPeoples() {
-        return peoples;
-    }
 
-    public void setPeoples(ArrayList<PeopleAPI> peoples) {
-        this.peoples = peoples;
-    }
 }

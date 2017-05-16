@@ -14,7 +14,7 @@ public interface ClienteInfarfaceAPI {
     @GET("api/planets/")
     Call<APIResults> getPlanet();
 
-    @GET("api/people")
-    Call<APIResults> getPeople();
+//    @GET("api/people")
+//    Call<APIResults> getPeople();
 
 }
