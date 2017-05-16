@@ -35,12 +35,13 @@ public class ShowAllPlanets extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_all_planets);
 
-        frameLayout = (FrameLayout) findViewById(R.id.loadingFrameLayout);
         final RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerViewPlanet);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-        Call<APIResults> call = APIClient.getPlanetAPI().getPlanet();
+        frameLayout = (FrameLayout) findViewById(R.id.loadingFrameLayout);
+        
         frameLayout.setVisibility(View.VISIBLE);
+        Call<APIResults> call = APIClient.getPlanetAPI().getPlanet();
+
         call.enqueue(new Callback<APIResults>() {
             @Override
             public void onResponse(Call<APIResults> call, Response<APIResults> response) {
