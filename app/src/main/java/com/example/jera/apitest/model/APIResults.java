@@ -13,8 +13,6 @@ public class APIResults {
     @SerializedName("results")
     ArrayList<PlanetAPI> planets;
 
-
-
     public ArrayList<PlanetAPI> getPlanets() {
         return planets;
     }

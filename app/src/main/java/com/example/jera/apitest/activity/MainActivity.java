@@ -12,6 +12,10 @@ import com.example.jera.apitest.adapter.RecylerViewAdapter;
 
 public class MainActivity extends AppCompatActivity {
     private CardView cardViewPlanet;
+    private CardView cardViewFilms;
+    private CardView cardViewPeoples;
+    private CardView cardViewSpecies;
+    private CardView cardViewVehicles;
     private static final String TAG = "Victor";
 
     @Override
@@ -19,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        cardViewFilms = (CardView) findViewById(R.id.cardViewFilms);
         cardViewPlanet = (CardView) findViewById(R.id.cardViewPlanets);
 
         cardViewPlanet.setOnClickListener(new View.OnClickListener() {
@@ -28,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ShowAllPlanets.class));
             }
         });
+
+        cardViewFilms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ShowAllFilms.class));
+            }
+        });
+
+
 
     }
 

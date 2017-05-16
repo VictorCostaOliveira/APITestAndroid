@@ -6,4 +6,5 @@
     <string name="espacionaves">Espacionaves</string>
     <string name="especies">Especies</string>
     <string name="veiculos">Veiculos</string>
+    <string name="conectioError">Algo de errado não esta certo, será que vc esta conectado na internet?</string>
 </resources>

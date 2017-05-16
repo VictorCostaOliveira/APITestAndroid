@@ -17,7 +17,7 @@ import java.util.List;
  * Created by jera on 11/05/17.
  */
 
-public class RecylerViewAdapter extends RecyclerView.Adapter<RecylerViewAdapter.AdapterViewHolder> {
+public class RecylerViewAdapter extends RecyclerView.Adapter<AdapterViewHolder> {
 
     AdapterInterface adapterInterface;
 
@@ -59,24 +59,7 @@ public class RecylerViewAdapter extends RecyclerView.Adapter<RecylerViewAdapter.
 
     }
 
-    public final class AdapterViewHolder extends RecyclerView.ViewHolder {
 
-        TextView viewNamePlanet;
-        TextView viewGravity;
-        TextView viewPopulation;
-        TextView viewClimate;
-        TextView viewTerrain;
-
-        public AdapterViewHolder(View itemView) {
-            super(itemView);
-            viewNamePlanet = (TextView) itemView.findViewById(R.id.textViewPlanetName);
-            viewGravity = (TextView) itemView.findViewById(R.id.textViewGravity);
-            viewPopulation = (TextView) itemView.findViewById(R.id.textViewPopulation);
-            viewClimate = (TextView) itemView.findViewById(R.id.textViewClimate);
-            viewTerrain = (TextView) itemView.findViewById(R.id.textViewTerrain);
-
-        }
-    }
 }
 
 
