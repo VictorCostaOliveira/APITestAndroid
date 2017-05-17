@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Created by vitor on 13/05/2017.
  */
 
-public class APIResults {
+public class APIPlanetsResults {
 
     @SerializedName("results")
     ArrayList<PlanetAPI> planets;

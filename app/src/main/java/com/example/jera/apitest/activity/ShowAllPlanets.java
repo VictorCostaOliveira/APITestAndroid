@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.jera.apitest.R;
 import com.example.jera.apitest.adapter.RecylerViewAdapter;
-import com.example.jera.apitest.model.APIResults;
+import com.example.jera.apitest.model.APIPlanetsResults;
 import com.example.jera.apitest.model.PlanetAPI;
 import com.example.jera.apitest.rest.APIClient;
 
@@ -42,18 +42,18 @@ public class ShowAllPlanets extends AppCompatActivity {
         frameLayout = (FrameLayout) findViewById(R.id.loadingFrameLayout);
 
         frameLayout.setVisibility(View.VISIBLE);
-        Call<APIResults> call = APIClient.getAPI().getPlanet();
+        Call<APIPlanetsResults> call = APIClient.getAPI().getPlanet();
 
-        call.enqueue(new Callback<APIResults>() {
+        call.enqueue(new Callback<APIPlanetsResults>() {
             @Override
-            public void onResponse(Call<APIResults> call, Response<APIResults> response) {
+            public void onResponse(Call<APIPlanetsResults> call, Response<APIPlanetsResults> response) {
                 frameLayout.setVisibility(View.GONE);
                 List<PlanetAPI> planetAPI = response.body().getPlanets();
                 recyclerView.setAdapter(new RecylerViewAdapter(planetAPI, R.layout.show_all_planets, getApplicationContext()));
             }
 
             @Override
-            public void onFailure(Call<APIResults> call, Throwable t) {
+            public void onFailure(Call<APIPlanetsResults> call, Throwable t) {
                 Toast.makeText(ShowAllPlanets.this, R.string.conectioError, Toast.LENGTH_SHORT).show();
                 Log.e(TAG, t.toString());
             }

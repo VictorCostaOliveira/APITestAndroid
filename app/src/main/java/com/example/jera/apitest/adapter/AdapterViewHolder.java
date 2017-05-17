@@ -26,6 +26,8 @@ public final class AdapterViewHolder extends RecyclerView.ViewHolder {
     TextView viewDirectorFilm;
     TextView viewDateFilm;
 
+    //Peoples View
+
     public AdapterViewHolder(View itemView) {
         super(itemView);
         // Planets view

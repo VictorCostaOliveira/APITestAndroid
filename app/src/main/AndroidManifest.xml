@@ -17,15 +17,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".activity.ShowAllPlanets">
-
-        </activity>
-        <activity android:name=".activity.ShowAllFilms">
-
-
-        </activity>
+        <activity android:name=".activity.ShowAllPlanets"></activity>
+        <activity android:name=".activity.ShowAllFilms"></activity>
+        <activity android:name=".activity.ShowAllPeoples"></activity>
     </application>
 
 </manifest>
