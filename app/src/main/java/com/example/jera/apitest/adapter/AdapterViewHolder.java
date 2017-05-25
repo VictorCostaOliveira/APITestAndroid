@@ -28,6 +28,8 @@ public final class AdapterViewHolder extends RecyclerView.ViewHolder {
 
     //Peoples View
 
+
+
     public AdapterViewHolder(View itemView) {
         super(itemView);
         // Planets view
